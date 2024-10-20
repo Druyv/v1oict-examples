@@ -1,7 +1,7 @@
 from machine import Pin
 import time
 
-gpio_pin = Pin(20, Pin.OUT)
+gpio_pin = Pin("LED", Pin.OUT)
 
 while True:
     gpio_pin.value(1)

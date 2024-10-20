@@ -1,7 +1,7 @@
 from machine import Pin
 import time
 
-gpio_pin = Pin(20, Pin.OUT)
+gpio_pin = Pin("LED", Pin.OUT)
 
 
 def pulse(pin, high_time, low_time):
@@ -10,8 +10,10 @@ def pulse(pin, high_time, low_time):
     Maak de pin pin_nr hoog, wacht high_time,
     maak de pin laag, en wacht nog low_time
     """
-
-    # implementeer deze functie
+    pin.high()
+    time.sleep(high_time)
+    pin.low()
+    time.sleep(low_time)
 
 
 while True:

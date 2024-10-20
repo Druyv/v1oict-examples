@@ -2,11 +2,11 @@ from machine import Pin
 import time
 
 led_pins = [
-    Pin(0, Pin.OUT),
-    Pin(1, Pin.OUT),
-    Pin(2, Pin.OUT),
-    Pin(3, Pin.OUT),
-    Pin(4, Pin.OUT)
+    Pin(11, Pin.OUT),
+    Pin(12, Pin.OUT),
+    Pin(13, Pin.OUT),
+    Pin(14, Pin.OUT),
+    Pin(15, Pin.OUT)
 ]
 
 
