@@ -3,7 +3,7 @@ import time
 import machine
 import neopixel
 
-np = neopixel.NeoPixel(machine.Pin(13), 8)
+np = neopixel.NeoPixel(machine.Pin(16), 8)
 
 while True:
     np[0] = [255, 0, 0]

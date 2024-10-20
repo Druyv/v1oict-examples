@@ -14,7 +14,7 @@ Drivers provided by https://www.circuitschools.com/
 Note: Adjust the potentiometer when you do not see any characters on the display 
 """
 
-i2c = I2C(0, sda=Pin(8), scl=Pin(9), freq=400000)
+i2c = I2C(1, sda=Pin(18), scl=Pin(19), freq=400000)
 
 I2C_ADDR = i2c.scan()[0]
 lcd = I2cLcd(i2c, I2C_ADDR, 2, 16)
@@ -23,4 +23,4 @@ while True:
     lcd.move_to(0, 0)
     lcd.putstr("I2CAddress:" + hex(I2C_ADDR) + "\n")
     lcd.move_to(0, 1)
-    lcd.putstr("LCD 16x2 demo.")
+    lcd.putstr("LCD 16x2 demo!")

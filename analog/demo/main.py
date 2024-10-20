@@ -1,7 +1,7 @@
 from machine import ADC, PWM, Pin
 import time
 
-led = PWM(Pin(20))
+led = PWM(Pin(15))
 led.freq(1000)
 
 adc = ADC(Pin(26))

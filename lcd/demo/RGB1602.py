@@ -2,11 +2,11 @@
 import time
 from machine import Pin, I2C
 
-RGB1602_SDA = Pin(4)
-RGB1602_SCL = Pin(5)
+RGB1602_SDA = Pin(18)
+RGB1602_SCL = Pin(19)
 
 # RGB1602_I2C = I2C(0, sda=RGB1602_SDA, scl=RGB1602_SCL, freq=400000)
-RGB1602_I2C = I2C(0, sda=RGB1602_SDA, scl=RGB1602_SCL, freq=125000)
+RGB1602_I2C = I2C(1, sda=RGB1602_SDA, scl=RGB1602_SCL, freq=125000)
 
 # Device I2C Address
 LCD_ADDRESS = (0x7C >> 1)
